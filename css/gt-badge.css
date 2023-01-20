@@ -1,0 +1,228 @@
+/* Badge CSS */
+/********* GT Official Web Colors *********/
+/********* GT Official Web Colors *********/
+:root {
+  /*** Primary Colors ***/
+  --gt-black: #262626;
+  --gt-white: #ffffff;
+  --gt-gold: #b3a369;
+  --gt-blue: #004f9f;
+  --gt-light-grey: #ccc;
+  --gt-md-grey: #545454;
+  --gt-dark-gray: #3b3b3b;
+  --gt-buzz-gold: #eeb211;
+
+  /* Primary (tech gold) */
+  --gt-primary-gold: #b3a369;
+
+  /* Secondary (gt pimile) */
+  --gt-secondary: #d6dbd4;
+
+  /* Success  */
+  --gt-success: #349e08;
+
+  /* Danger (horizon) */
+  --gt-danger: #f95e10;
+
+  /* Warning */
+  --gt-warning: #ff0101;
+
+  /* Information (gt navy) */
+  --gt-info: #003057;
+
+  /* Light (gt pimile light) */
+  --gt-light: #f2f3f1;
+
+  /* Dark Grey */
+  --gt-dark: #3b3b3b;
+
+  /*** Primary Font  ***/
+  --font-roboto: "Roboto", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  --font-roboto-condensed: 'Roboto Condensed', sans-serif;
+  --font-roboto-slab: "Roboto Slab", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  --font-abel: 'Abel', sans-serif;
+}
+
+
+.badge-container {
+  position: relative;
+}
+
+.burst-wrapper-left {
+  top: -40px;
+  left: -70px;
+  right: 0;
+}
+
+.burst-wrapper-right {
+  top: -40px;
+  right: 100px;
+  display: inline-block;
+  white-space: nowrap;
+  vertical-align: top;
+}
+
+.badge-title {
+  color: var(--gt-dark);
+  font-size: 2.65rem;
+  font-weight: 600;
+  font-family: var(--font-roboto-condensed);
+  text-transform: uppercase;
+}
+
+.badge {
+  display: inline-block;
+  padding: .4em 1em;
+  font-size: 40%;
+  font-family: var(--font-abel);
+  font-weight: 600;
+  line-height: 1;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: top;
+  border-radius: .25rem;
+  z-index: 2;
+  position: relative;
+}
+
+.badge-two {
+  display: inline-block;
+  padding: .4em 1em;
+  font-size: 40%;
+  font-family: var(--font-abel);
+  font-weight: 600;
+  line-height: 1;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: top;
+  border-radius: .25rem;
+  z-index: 2;
+  position: relative;
+}
+/* Icons */
+span .badge {
+  width: 80px;
+  height: 80px;
+  position: relative;
+  text-align: center;
+}
+
+span .badge:before,
+span .badge:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 80px;
+  width: 80px;
+}
+
+span .badge:before {
+  transform: rotate(30deg);
+}
+
+span .badge:after {
+  transform: rotate(60deg);
+}
+
+#burst {
+  background: var(--gt-buzz-gold);
+  width: 80px;
+  height: 80px;
+  text-align: center;
+  transform: scale(0.6) rotate(110deg);
+  position: absolute;
+  top: -35px;
+  z-index: 1;
+  margin: 0 0 0 1rem !important;
+}
+
+#burst:before,
+#burst:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 80px;
+  width: 80px;
+  background: var(--gt-buzz-gold);
+}
+
+#burst:before {
+  transform: rotate(30deg);
+}
+
+#burst:after {
+  transform: rotate(60deg);
+}
+
+#burst.badge-title {
+  margin: 0 0 0 .5rem;
+}
+
+/* Color */
+/* Blue */
+.curie-blue {
+  background-color: var(--gt-blue);
+}
+
+.curie-blue,
+.curie-blue p {
+  color: var(--gt-white);
+}
+
+.curie-blue-trans {
+  background-color: rgba(0, 79, 159, 0.8);
+  color: var(--gt-white);
+}
+/* Dark */
+.curie-black {
+  background-color: var(--gt-black);
+}
+
+.curie-black,
+.curie-black p {
+  color: var(--gt-white);
+}
+
+/* Gold */
+.curie-gold {
+  background-color: var(--gt-gold);
+}
+
+.curie-gold,
+.curie-gold p {
+  color: var(--gt-black);
+}
+
+/* Light */
+.curie-light {
+  background-color: var(--gt-light-grey);
+}
+
+.curie-light,
+.curie-light p {
+  color: var(--gt-black);
+}
+
+/* WARM GREY */
+.curie-warm-gray  {
+  background-color: var(--gt-light-grey);
+}
+
+.curie-warm-gray,
+.curie-warm-gray p {
+  color: var(--gt-black);
+}
+
+/* Neutral*/
+.curie-white {
+  background-color: transparent;
+  border: 2px solid var(--gt-light-grey);
+}
+
+.curie-white,
+.curie-white p {
+  color: var(--gt-black);
+}
+
